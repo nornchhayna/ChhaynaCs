@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <head>
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Polytechnic Institute of cambodia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            width: 25%;
+            float: left;
+        }
+
+        .main {
+            width: 75%;
+            float: left;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            height: 100%;
+            display: flex;
+            color: #333;
+            background-color: #f4f6f9;
+        }
+
+        header {
+
+            color: #333;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        header .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: #ffffff;
+
+        }
+
+        .H1 h1 {
+            font-size: 4rem;
+            color: #333;
+            margin: 0;
+            line-height: 1.3;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            background: linear-gradient(100deg, #0116d5, #049fbe);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: background 0.3s ease;
+        }
+
+      
+@keyframes slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+    
+        @keyframes smooth-spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+        .logo img {
+            height: 100px;
+            width: 100%;
+            margin: auto;
+            border: #000000;
+            border-radius: 10%;
+            animation: smooth-spin 6s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .logo img:active {
+            transform: translateY(2px);
+        }
+
+        .item img {
+            height: 50px;
+
+        }
+
+.logo {
+    overflow: hidden; /* Prevents overflow during scaling */
+}
+
+.logo h1 {
+    font-size: 3rem;
+    color: #333;
+    transform-origin: left center; /* Scale from the left */
+    animation: scaleRight 2s ease-in-out forwards;
+}
+
+@keyframes scaleRight {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+        .item img {
+            height: 50px;
+            box-shadow: #0b0b0b;
+            border: #0b0b0b;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: #cce0ff;
+            color: #003366;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        header2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            position: relative;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: #d7cece;
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links li a {
+            color: #0c0b0b;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: #002f6c;
+            background-color: #dbd8d8;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        #search-icon {
+            background: none;
+            border: none;
+            color: #000000;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .search-form {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .search-form input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .search-form button {
+            background: #f0f0f0;
+            color: #020c7e;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-form button:hover {
+            background: #e0e0e0;
+        }
+
+        .nav-links.active {
+
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #020c7e;
+            padding: 10px 0;
+            border-radius: 5px;
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                flex: 1 1 calc(50% - 40px);
+            }
+
+
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 80px;
+            }
+
+            nav ul li {
+                margin: 40px;
+            }
+
+            nav ul li a {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item {
+                flex: 1 1 100%;
+            }
+
+
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 80px;
+            }
+
+            nav ul li {
+                margin: 40px;
+            }
+
+            nav ul li a {
+                font-size: 18px;
+            }
+        }
+
+
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 600px;
+            background-image: url('/Users/macbookpro/Desktop/project assignment/back.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 5px 150px 5px 150px;
+            /* top, right, bottom, left */
+        }
+
+        .hero:hover {
+            background-color: #1c3238;
+        }
+
+        .university-news {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-box {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            padding: 10px;
+            border: none;
+            background-color: none;
+            margin: 10px 150px 10px 150px;
+            /* top, right, bottom, left */
+        }
+
+        .image-column {
+            grid-column: 1 / 2;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text-columns {
+            grid-column: 2 / 3;
+            display: grid;
+            grid-template-rows: repeat(3, 2);
+            gap: 20px;
+        }
+
+        .text-columns2 {
+            grid-column: 3 / 3;
+            display: grid;
+            grid-template-rows: repeat(3, 3);
+            gap: 20px;
+        }
+
+        .text-column {
+            padding: 10px;
+            border: none;
+            background-color: none;
+        }
+
+        .text-column .icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: goldenrod;
+
+
+
+        }
+
+        .foundation-studies h2 {
+            text-align: center;
+        }
+
+        .graduate-programs h2 {
+            text-align: center;
+        }
+
+        .about-us h2 {
+            text-align: center;
+        }
+
+        .hero h2 {
+            margin: 0;
+
+            text-align: center;
+            font-size: 2rem;
+            text-shadow: linear-gradient(100deg, #0116d5, #049fbe);
+
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 15px 0;
+
+        }
+
+        .hero .cta-button {
+            background: #cce0ff;
+            color: #003366;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .hero .cta-button:hover {
+            background: #003366;
+            color: #fff;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+
+        }
+
+        .main-content {
+            padding: 40px 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 20px;
+            margin: 10px 150px 10px 150px;
+            /* top, right, bottom, left */
+        }
+
+        .project-management .grid-container,
+
+        .foundation-studies .grid-container,
+        .about-us .grid-container {
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .graduate-programs .grid-container {
+            grid-template-columns: auto;
+        }
+
+        .foundation-studies .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .about-us .grid-container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .item {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(37, 22, 38, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+
+        .item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .item img:hover {
+            transform: scale(0.8);
+        }
+
+        .item video {
+            max-width: 100%;
+            height: 500px;
+            border-radius: 5px;
+        }
+
+        .item.col-span-2 {
+            grid-column: span 2;
+        }
+
+        .item.col-span-3 {
+            grid-column: span 3;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            margin-top: 5%;
+        }
+
+
+        footer {
+            background: #0116d5;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        footer a {
+            color: #cce0ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .project2 {
+            text-align: center;
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* Responsive grid layout */
+            gap: 30px;
+            /* Space between cards */
+            perspective: 1000px;
+            margin: 10px 150px 10px 150px;
+            /* top, right, bottom, left */
+        }
+
+        .item2 {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            transform-style: preserve-3d;
+            transition: transform 1.2s ease;
+
+
+        }
+
+        .item2:hover .item-inner2 {
+            transform: rotateY(180deg);
+        }
+
+        .item-inner2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 1.2s ease;
+            transform-style: preserve-3d;
+        }
+
+        .item-front2,
+        .item-back2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .item-front2 {
+            background: #fff;
+            z-index: 2;
+        }
+
+        .item-back2 {
+            background: #f0f0f0;
+            transform: rotateY(180deg);
+            z-index: 1;
+        }
+
+        .item-front2 img {
+            max-width: 80%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .item-front2 h2,
+        .item-back2 h2 {
+            margin: 10px 0;
+        }
+
+        .item-front2 ul,
+        .item-back2 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .item-front2 li,
+        .item-back2 li {
+            padding: 5px 0;
+        }
+
+        .container3 {
+            width: 100%;
+            margin: 1px 0 1px 0;
+            /* top, right, bottom, left */
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+
+
+
+        .logo3 {
+            display: flex;
+            align-items: center;
+            padding: 10px 20;
+            /* Adjust padding as needed */
+        }
+
+        /* Small Navigation Bar Styling */
+        .small-nav-bar3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            background-color: none;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+        }
+
+        /* Social Icons Styling */
+        .social-icons3 {
+            display: flex;
+            gap: 40px;
+        }
+
+        .social-icons3 a {
+            color: #000000;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #ffff;
+        }
+
+        .social-icons3 :hover {
+
+            box-shadow: 0 2px 4px rgb(255, 221, 0);
+            transform: translateY(2px);
+        }
+
+        .social-icons3 :active {
+
+            box-shadow: 0 2px 4px rgba(251, 255, 0, 0.928);
+            transform: translateY(2px);
+        }
+
+
+        .account-options3 {
+            display: flex;
+            gap: 40px;
+        }
+
+        .account-options3 a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .account-options3 a:hover {
+            color: #007bff;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            border: none;
+            background: none;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            color: black;
+            outline: none;
+        }
+
+        .button img {
+            width: 20px;
+            height: 15px;
+
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header2>
+        <div class="container3">
+            <div class="logo3">
+                <nav class="small-nav-bar3">
+                    <div class="social-icons3">
+                        <a href="https://web.facebook.com/npic.edu.kh?_rdc=1&_rdr" target="_blank"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="account-options3">
+                        <a href="mailto:youremail@example.com" aria-label="My Account">
+                            <i class="fas fa-user"></i> My Account
+                        </a>
+                        <a href="#research" aria-label="Research and Technology Development Center">
+                            <i class="fas fa-flask"></i> Research & Technology Development Center
+                        </a>
+                        <a href="#library" aria-label="Library">
+                            <i class="fas fa-book"></i> Library
+                        </a>
+                        <button id="translate-btn-khmer" class="button" aria-label="Translate to Khmer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+                                alt="Cambodia Flag">
+                            Khmer
+                        </button>
+
+                        <button id="translate-btn-eng" class="button" aria-label="Translate to English">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+                                alt="US Flag">
+                            ENG
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            </header>
+            <header>
+
+                <div class="container">
+                    <div class="logo">
+                        <img src="/Users/macbookpro/Desktop/project assignment/npic.png" alt="University Logo">
+
+                    </div>
+                    <div class="H1">
+                        <h1>National Polytechnic Institute of cambodia</h1>
+                    </div>
+
+
+                </div>
+            </header>
+
+            <header2>
+                <nav>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>  
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="#home">HOME</a></li> |
+                        <li><a href="#contact">ABOUT</a></li>|
+                        <li><a href="#projects">COURSE</a></li>|
+                        <li><a href="#foundation">FOUNDATION STUDIES</a></li>|
+                        <li><a href="#graduate">UNIVERSITY-NEWS</a></li>
+                        <li class="search-container">
+                            <button id="search-icon" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <form id="search-form" class="search-form" action="/search" method="get">
+                                <input type="text" name="query" placeholder="Search...">
+                                <button type="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </header2>
+
+            <section id="home">
+                <div class="hero">
+                    <h2>Welcome to វិទ្យាស្ថានជាតិពហុបច្ចេកទេសកម្ពុជា - NPIC</h2>
+                </div>
+                <div class="h1">
+                    <h1>គ្រឹះស្ថានអប់រំបណ្តុះបណ្តាលបច្ចេកវិទ្យានិងវិជ្ជាជីវៈឈានមុខគេនៅកម្ពុជា</h1>
+                </div>
+            </section>
+
+            <section id="projects" class="project2">
+                <h2>Course</h2>
+                <div class="grid-container2">
+                    <div class="item2">
+                        <div class="item-inner2">
+                            <div class="item-front2">
+                                <img src="npic.png" alt="University Logo">
+                                <h2>ថ្នាក់ក្រោយបរិញ្ញាបត្រ</h2>
+                                <ul>
+                                    <li>ដេបាតឺ​ម៉ង់បណ្ដិតបច្ចេកវិទ្យា</li>
+                                    <li>ដេបាតឺ​ម៉ង់បណ្ដិតបច្ចេកវិទ្យាជាន់ខ្ពស់បច្ចេកវិទ្យា</li>
+
+                                </ul>
+                            </div>
+                            <div class="item-back2">
+                                <h3>ជំនាញសិក្សាមានដូចជា</h3>
+                                <ul>
+                                    <li>វិស្វកម្មអគ្គីសនី</li>
+                                    <li>វិស្វកម្មសំណង់</li>
+                                    <li>វិស្វកម្មមេកានិក</li>
+                                    <li>សំណង់ស្ថាបត្យកម្ម</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <div class="item-inner2">
+                            <div class="item-front2">
+                                <img src="npic.png" alt="University Logo">
+                                <h2>ថ្នាក់ឧត្តមសិក្សា</h2>
+                                <ul>
+                                    <li>បរិញ្ញាបត្របច្ចេកវិទ្យា</li>
+                                    <li>បន្តបរិញ្ញាបត្របច្ចេកវិទ្យា</li>
+                                    <li>បច្ចេកទេសជាន់ខ្ពស់</li>
+                                </ul>
+                            </div>
+                            <div class="item-back2">
+                                <h3>ជំនាញសិក្សាមានដូចជា</h3>
+                                <ul>
+                                    
+                            <li><button>ចុចអានបន្ថែម</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <div class="item-inner2">
+                            <div class="item-front2">
+                                <img src="npic.png" alt="University Logo">
+                                <h2>បណ្តុះបណ្តាលវគ្កខ្លី</h2>
+                                <ul>
+                                    <li>(សិក្សារយះពេលខ្លី៣ខែ-១ឆ្នាំ)</li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="item-back2">
+                                <h3>ជំនាញសិក្សាមានដូចជា</h3>
+                                <ul>
+                                              
+                                       
+                                    <li><button>ចុចអានបន្ថែម</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <div class="item-inner2">
+                            <div class="item-front2">
+                                <img src="npic.png" alt="University Logo">
+                                <h2>ថ្នាក់សញ្ញាបត្របច្ចេកទេសនិងវិជ្ជាជីវះកម្រិតC1 ,C2,C3</h2>
+
+                                <ul>
+                                    <li>(អាហារូបករណ៍១០០%)</li>
+                                
+
+                                </ul>
+                            </div>
+                            <div class="item-back2">
+                                <h3>ជំនាញសិក្សាមានដូចជា</h3>
+                                <ul>
+                                    <li><button>ចុចអានបន្ថែម</button></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-us">
+                <div class="grid-container">
+                    <div class="item">
+                        <img src="/Users/macbookpro/Desktop/project assignment/elec.jpeg" alt="About Us 1">
+                        <p>Electrical Engineering</p>
+                    </div>
+                    <div class="item">
+                        <img src="/Users/macbookpro/Desktop/project assignment/engi.png" alt="About Us 2">
+                        <p>Engineering</p>
+                    </div>
+                    <div class="item">
+                        <img src="optic.png" alt="About Us 3">
+                        <p>Optic</p>
+                    </div>
+                    <div class="item">
+                        <img src="com.png" alt="About Us 4">
+                        <p>Computer Science</p>
+                    </div>
+                    <div class="item">
+                        <img src="hotel.avif" alt="About Us 1">
+                        <p>Hotel</p>
+                    </div>
+                    <div class="item">
+                        <img src="meganic.png" alt="About Us 2">
+                        <p>Mechanic</p>
+                    </div>
+                    <div class="item">
+                        <img src="car.png" alt="About Us 3">
+                        <p>Car Mechanic</p>
+                    </div>
+                    <div class="item">
+                        <img src="electronics-187.png" alt="About Us 4">
+                        <p>Electronic and telecommunication</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="graduate" class="graduate-programs">
+                <h2>Graduate Programs</h2>
+                <div class="grid-container">
+
+                    <div class="item">
+                        <video controls
+                            src="/Users/macbookpro/Desktop/project assignment/8198517-hd_1920_1080_25fps.mp4"
+                            type="video/mp4" autoplay muted playsinline>
+                            Your browser does not support the video tag.
+                        </video>
+                        <p></p>
+                    </div>
+
+                </div>
+            </section>
+            <section id="news" class="university-news">
+                <div class="main-box">
+                    <div class="image-column">
+                        <img src="/Users/macbookpro/Desktop/project assignment/scorlaship.jpeg" alt="News Image">
+                    </div>
+                    <div class="text-columns">
+                        <div class="text-column">
+
+                            <h3><i class="fas fa-graduation-cap icon"></i>Nankai University Scholarship</h3>
+                            <p>Posted: 2017-05-25</p>
+                        </div>
+                        <div class="text-column">
+
+                            <h3><i class="fas fa-award icon"></i>UTAR Scholarship for CLMV Countries 2017-2018</h3>
+                            <p>Posted: 2017-05-11</p>
+                        </div>
+                        <div class="text-column">
+
+                            <h3><i class="fas fa-briefcase icon"></i>JOB FAIR 2023</h3>
+                            <p>On 23 November 2023, RUPP conducted a workshop on the 21st Century Skills - Leadership
+                                Mindset.</p>
+                        </div>
+                    </div>
+                    <div class="text-columns2">
+                        <div class="text-column">
+
+                            <h3><i class="fas fa-calendar-alt icon"></i>EVENT 1</h3>
+                            <p>Description of event 1.</p>
+                        </div>
+                        <div class="text-column">
+
+                            <h3> <i class="fas fa-calendar-check icon"></i>EVENT 2</h3>
+                            <p>Description of event 2.</p>
+                        </div>
+                        <div class="text-column">
+
+                            <h3> <i class="fas fa-calendar-day icon"></i>EVENT 3</h3>
+                            <p>Description of event 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="foundation" class="foundation-studies">
+                <h2>Foundation Studies</h2>
+                <div class="grid-container">
+                    <div class="item">
+                        
+                        <p>Typical Components of Foundation Studies <br>
+                            Mathematics: <br>
+                            
+                            Topics Covered: Algebra, calculus, statistics, and geometry.
+                            Purpose: To develop problem-solving skills and quantitative reasoning, which are crucial for engineering and technology subjects. <br>
+                            Physics: <br>
+                            
+                            Topics Covered: Mechanics, electricity and magnetism, thermodynamics, and wave phenomena.
+                            Purpose: To understand the physical principles that underpin technological processes and engineering applications. <br>
+                            Chemistry: <br>
+                            
+                            Topics Covered: General chemistry, chemical reactions, and material properties.
+                            Purpose: To provide knowledge on materials science and chemical processes relevant to engineering disciplines. <br>
+                            Technical Drawing: <br>
+                            
+                            Topics Covered: Orthographic projections, isometric drawing, and CAD (Computer-Aided Design).
+                            Purpose: To teach students how to create and interpret technical diagrams, which are essential for engineering and design work. <br>
+                            Computer Science: <br>
+                            
+                            Topics Covered: Basic programming, algorithms, and data structures.
+                            Purpose: To introduce students to computational thinking and programming skills that are increasingly important in various technical fields.</p>
+                    </div>
+                    <div class="item">
+                   
+                        Mathematics: <br>
+                            
+                        Topics Covered: Algebra, calculus, statistics, and geometry.
+                        Purpose: To develop problem-solving skills and quantitative reasoning, which are crucial for engineering and technology subjects. <br>
+                        Physics: <br>
+                        
+                        Topics Covered: Mechanics, electricity and magnetism, thermodynamics, and wave phenomena.
+                        Purpose: To understand the physical principles that underpin technological processes and engineering applications. <br>
+                        Chemistry: <br>
+                        
+                        Topics Covered: General chemistry, chemical reactions, and material properties.
+                        Purpose: To provide knowledge on materials science and chemical processes relevant to engineering disciplines. <br>
+                        Technical Drawing: <br>
+                        
+                        Topics Covered: Orthographic projections, isometric drawing, and CAD (Computer-Aided Design).
+                        Purpose: To teach students how to create and interpret technical diagrams, which are essential for engineering and design work. <br>
+                        Computer Science: <br>
+                        
+                        Topics Covered: Basic programming, algorithms, and data structures.
+                        Purpose: To introduce students to computational thinking and programming skills that are increasingly important in various technical fields.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="about-us">
+                <div class="grid-container">
+                    <div class="item">
+                        <h3>Find Us Here</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.731406971837!2d-122.41186828468127!3d37.77492927975916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808d08d5b65d%3A0x10f45f02b2d768!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1617755789602!5m2!1sen!2sus"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="item">
+                        <h4>អាស័យដ្ឋាន:</h4>
+                        <p>
+                            ភូមីព្រៃពពេល សង្កាត់សំរោងក្រោម ខណ្ឌពោធិ៍សែនជ័យ ភ្នំពេញ(ក្បែរវត្តពូនភ្នំ) <br>
+                            រៀងរាល់ម៉ោងធ្វើការ: <br>
+                            ច័ន្ហ - សុក្រ: 8:00 AM - 4:00 P.M <br>
+                            ចុងសប្តាហ៍: 8:00 A.M - 12:00 P.M <br>
+                            ទូរសព្ទ:
+                            011-769003 / 087-506680 <br>
+                            081-733377 / 097-3733377 <br>
+                            016-645601​/​ 015-979353
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p>
+                            លោក ហេង ភក្តិណា : <br> 097-3733377 <br><b>មហា.សំណង់ស៊ីវិលនិងស្ថាបត្យកម្ម</b> <br>
+                            លោក សិព ភគវន្ត : <br> 017-362886 <br><b>មហា.អគ្គិសនី</b> <br>
+                            លោកស្រី អ៉ឹម ស្រីមុំៈ <br> 098-968857 <br><b>មហា.អេឡិចត្រូនិក</b> <br>
+                            លោក រឿង ថៃ: <br> 010-952178
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p><b>មហា. វិទ្យាសាស្ត្រកុំព្យូទ័រ</b> <br>
+                            លោក សុខ សារ៉ាត់ : 010-792027 <br>
+                            <b>មហា. មេកានិកទូទៅ</b> <br>
+                            លោក ជួន ឌី: 012-292492 <br>
+                            <b>មហា. មេកានិករថយន្ត</b> <br>
+                            លោក សន មុន្នីរ័ត្ន : 095-207192 <br>
+                            <b>មហា.ទេសចរណ៍និងបដិសណ្ឋារកិច្ច</b> <br>
+                            លោកស្រី ហេង ចរិយា : 092-959585</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <p>&copy; 2024 Polytechnic Institute of Cambodia. All rights reserved.</p>
+                    <p>Find us on: <a href="https://web.facebook.com/npic.edu.kh?_rdc=1&_rdr">Facebook</a> | <a
+                            href="#">NPIC</a></p>
+                </div>
+            </footer>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const menuToggle = document.querySelector('.menu-toggle');
+                    const navLinks = document.querySelector('.nav-links');
+
+                    menuToggle.addEventListener('click', () => {
+                        navLinks.classList.toggle('active');
+                    });
+
+                    document.getElementById('search-icon').addEventListener('click', function () {
+                        const form = document.getElementById('search-form');
+                        if (form.style.display === 'none' || form.style.display === '') {
+                            form.style.display = 'block';
+                            form.querySelector('input').focus();
+                        } else {
+                            form.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
+</body>
+
+</html>
